@@ -1,6 +1,6 @@
 import React,{useState,useEffect, useRef } from 'react'
 import "../CSS/Navbar.css"
-import {Link} from "react-router-dom"
+import {Link,useNavigate} from "react-router-dom"
 import lunaLogo from "../assets/logos/lunaLogo.webp"
 import joystickLogo from "../assets/logos/joystickLogo.svg"
 import dropdownLogo from "../assets/logos/dropdownLogo.svg"
@@ -28,6 +28,8 @@ function Navbar()
   console.log(userData);
 
   const profileRef=useRef();
+  const navigate = useNavigate();
+
 
   const navbarLinksRef=useRef();
   const [isLoggedIn,setIsLoggedIn]=React.useState(localStorage.getItem('auth-token')?true:false);
@@ -96,12 +98,14 @@ function Navbar()
   {
       if(!isLoggedIn)
       {
-             window.location.replace(`/signupsignin`); 
-            // window.location.replace("/signupsignin"); 
+            navigate("/signupsignin");
             return;
       }
-  localStorage.removeItem('auth-token'); 
-  window.location.replace("/");   
+      else{
+
+            localStorage.removeItem('auth-token'); 
+            navigate("/"); 
+      }
   };
 
   const diplayNavbarLinks = () =>
