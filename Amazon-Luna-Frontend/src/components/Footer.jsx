@@ -1,5 +1,5 @@
 import React from 'react'
-import '../CSS/Footer.css'
+import '../CSS/footer.css'
 import footerimage from '../assets/image/footerimage.webp'
 
 function Footer() {
