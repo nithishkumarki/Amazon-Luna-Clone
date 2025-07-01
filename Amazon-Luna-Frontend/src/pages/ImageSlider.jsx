@@ -1,6 +1,8 @@
 import React, { useState, useEffect,useRef } from "react";
 import {Link} from "react-router-dom";
 import "../CSS/ImageSlider.css"; 
+import muted from "../assets/logos/muted.svg";
+import unmuted from "../assets/logos/unmuted.svg";
 
 const media = 
 [
@@ -13,6 +15,7 @@ const ImageSlider = () =>
 {
   const [currentIndex, setCurrentIndex] = useState(0);
   const videoRef= useRef(null);
+  const [isMuted, setIsMuted] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => 
@@ -50,7 +53,8 @@ const ImageSlider = () =>
     );
   };
   const handleLoadedVideo = () => {
-  if (videoRef.current && videoRef.current.duration) {
+  if (videoRef.current && videoRef.current.duration)
+  {
     videoRef.current.currentTime = videoRef.current.duration / 2.8;
   }
 }
@@ -60,6 +64,15 @@ const ImageSlider = () =>
       <div className="carousel">
 
         <div className="carousel-container">
+
+          <div className="mute-toggle" onClick={() => setIsMuted(!isMuted)}>
+
+          <img
+             src={isMuted ? muted : unmuted}
+    style={{ width: "30px", height: "30px", cursor: "pointer" }}
+
+           />
+          </div>
           
           <div className="carousel-content">
             <img src={ media[currentIndex].title } />
@@ -79,7 +92,7 @@ const ImageSlider = () =>
               src={media[currentIndex].src}
               className="carousel-image"
               autoPlay
-              unmuted
+              muted={isMuted}
               loop
                onLoadedMetadata={handleLoadedVideo}
             />
