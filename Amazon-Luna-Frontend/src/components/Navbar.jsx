@@ -12,8 +12,8 @@ import help from "../assets/logos/help.svg"
 import info from "../assets/logos/info.svg"
 import list from "../assets/logos/list.svg"
 import signout from "../assets/logos/signout.svg"
-import { AmazonLunaContext } from '../context/AmazonLunaContext'
-// import { Link } from 'react-router-dom'
+import {fetchUserData, AmazonLunaContext } from '../context/AmazonLunaContext'
+
 
 function Navbar()
 {
@@ -39,6 +39,7 @@ function Navbar()
 
 
   useEffect(() => {
+      fetchUserData();
       const checkLogin=()=> setIsLoggedIn(localStorage.getItem('auth-token')?true:false);
       setIsLoggedIn(localStorage.getItem('auth-token')?true:false);
       
@@ -73,7 +74,7 @@ function Navbar()
                   document.addEventListener('mousedown',handleClickOutsideNavbarLinks);
                   
                   
-            },[isMobile])
+            },[isMobile,isLoggedIn])
             
             const handleClickOnNavbarLinks = (event) =>
             {
