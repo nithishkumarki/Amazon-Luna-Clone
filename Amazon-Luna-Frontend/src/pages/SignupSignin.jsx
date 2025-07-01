@@ -34,7 +34,7 @@ const SignupSignin = () =>
   {
       let responseData;
 
-      await fetch("http://localhost:8001/signup",
+      await fetch(`${import.meta.env.VITE_ALCB_API_URL}/signup`,
         {
         method:'POST',
         headers:
@@ -60,7 +60,7 @@ const SignupSignin = () =>
     
     let responseData;
 
-    await fetch('http://localhost:8001/signin', 
+    await fetch(`${import.meta.env.VITE_ALCB_API_URL}/signin`, 
     {
       method:'POST',
       headers:{

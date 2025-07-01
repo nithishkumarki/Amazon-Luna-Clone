@@ -44,7 +44,7 @@ function GamePage()
    
     const purchase=async()=>
     {
-           const response=await fetch("http://localhost:8001/purchaseSubscription",
+           const response=await fetch(`${import.meta.env.VITE_ALCB_API_URL}/purchaseSubscription`,
              {
                   method:"POST",
                   headers:{
@@ -151,7 +151,7 @@ function GamePage()
             if(playlistState==="Add to Playlist")
               {
                 
-                const playListResponse=await fetch("http://localhost:8001/addToPlayList",
+                const playListResponse=await fetch(`${import.meta.env.VITE_ALCB_API_URL}/addToPlayList`,
                   {
                     method:"POST",
                     headers:
@@ -185,7 +185,7 @@ function GamePage()
               }
               else
               {
-                const playListResponse= await fetch("http://localhost:8001/removeFromPlayList",
+                const playListResponse= await fetch(`${import.meta.env.VITE_ALCB_API_URL}/removeFromPlayList`,
                   {
                     method:"POST",
                     headers:

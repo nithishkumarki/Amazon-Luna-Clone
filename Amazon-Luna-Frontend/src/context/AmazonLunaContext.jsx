@@ -20,7 +20,7 @@ const AmazonLunaContextProvider=(props)=>
             {
         if(localStorage.getItem("auth-token"))
         {  
-            fetch("http://localhost:8001/getuserdata",
+            fetch( `${import.meta.env.VITE_ALCB_API_URL}/getuserdata`,
                 {
                     method:"POST",
                     headers:
@@ -37,7 +37,7 @@ const AmazonLunaContextProvider=(props)=>
   useEffect(()=>
     {
 
-    fetch("http://localhost:8001/getAllGames",
+    fetch(`${import.meta.env.VITE_ALCB_API_URL}/getAllGames`,
         {
             method:"GET",
             headers:

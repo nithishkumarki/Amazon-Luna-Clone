@@ -8,7 +8,17 @@ const path=require('path');
 const cors=require('cors');
 
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin: [
+    'http://localhost:3000',
+    'http://localhost:8000', 
+    'http://localhost:5173',
+    'https://your-frontend-domain.com' 
+  ],
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization', 'auth-token']
+}));
 
 // Connect to MongoDB
 const mongoose=require('mongoose');
