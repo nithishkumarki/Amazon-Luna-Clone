@@ -102,12 +102,10 @@ function Navbar()
             navigate("/signupsignin");
             return;
       }
-      if(isLoggedIn)
-      {    
-
-            localStorage.removeItem('auth-token'); 
-            navigate("/"); 
-      }
+      localStorage.removeItem('auth-token');
+       setIsLoggedIn(false); 
+       setArrowRotated(false); 
+       navigate("/");
   };
 
   const diplayNavbarLinks = () =>
