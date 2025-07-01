@@ -1,0 +1,548 @@
+.navbar
+{
+    height: 70px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color:rgb(42, 0, 88);
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    padding: 0px 20px;
+    box-sizing: border-box;
+}
+
+.navbar-left
+{
+    
+  height: 52px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 5px;
+  align-items: center;
+
+}
+.listlogo{
+    display: none;
+}
+.lunalogo{
+    width:107.2px;
+    height: 32px;
+}
+.cloud-gaming{
+    font-family: Ember !important;
+    -webkit-font-smoothing: antialiased !important;
+    font-weight: 800 !important;
+    font-size: 14px !important;
+    color: rgb(255, 255, 255) !important;
+    display: flex !important
+;
+    min-width: max-content !important;
+    padding: 2px 7px !important;
+    background: linear-gradient(90deg, rgb(46, 169, 232), rgb(2, 253, 219)) text !important;
+    -webkit-text-fill-color: transparent !important;
+    position: relative !important;
+    margin-top: 0px !important;
+}
+.navbarlinks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;   
+}
+.navbarlinks-navbarlink
+{
+     padding: 10px 10px;
+   text-decoration:none;
+   color:white 
+   
+}
+.navbarlinks-navbarlink:hover
+{
+    border-radius: 10px;
+    padding: 10px 10px;
+    background-color:rgba(84, 65, 105, 0.765);
+   text-decoration:none;
+   color:white 
+} 
+
+.navbarlinks>hr
+{
+    width: 120%;
+    height:4px;
+    border: none;
+    background-color:white;
+    position: relative;
+    top:14px;
+}
+
+
+.navbar-right{
+    width: 317.33px;
+    height: 52px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-right> .Logo{
+    padding: 0px 5px;
+    border-radius: 10px; 
+}
+.navbar-right> .Logo:hover{
+    background-color: rgba(84, 65, 105, 0.765);
+    border-radius: 10px; 
+}
+.profileLogo-dropdownLogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    
+   
+}
+.profileLogo-dropdownLogo:hover{
+    background-color: rgba(84, 65, 105, 0.765);
+    border-radius: 10px; 
+}
+
+
+
+.navbar-right button{
+    height: 38px;
+    background-color: rgb(145, 70, 255);
+    color: white;
+   padding-inline: 6px;
+   border-radius: 10px;
+   border: none;
+   padding: 0px 20px;
+}
+.navbar-right button:hover{
+    background-color:rgb(97, 47, 151);
+}
+
+.profile-dropdown{
+    width: 300px;
+    height: 354px;
+    background-color:rgb(71, 71, 71);
+    position: absolute;
+    top: 60px; 
+    right: 35px;  
+    border-radius: 10px;
+    z-index: 10;
+
+}
+.profile-dropdown-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px 10px;
+}
+.profile-dropdown-col-item{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 10px;
+
+}
+.profile-dropdown-col-item:hover{
+    background-color:rgb(98, 98, 98);
+
+}
+.profile-dropdown-col-item>img{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+.profile-dropdown-col-item>p{
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+}
+.profile-dropdown>hr{
+    border:none;
+    border-top: 2px solid rgb(126, 126, 126) ;
+}
+
+@media(max-width:1980px)
+{
+   .navbar
+{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color:rgb(42, 0, 88);
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    padding: 0px 20px;
+    box-sizing: border-box;
+}
+.navbar-left
+{
+    
+  height: 52px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 5px;
+  align-items: center;
+
+}
+.listlogo{
+    display: none;
+}
+.navbat-left-links{
+    height: 52px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 0px;
+  align-items: center;
+}
+.lunalogo{
+    width:107.2px;
+    height: 32px;
+}
+.cloud-gaming{
+    font-family: Ember !important;
+    -webkit-font-smoothing: antialiased !important;
+    font-weight: 800 !important;
+    font-size: 14px !important;
+    color: rgb(255, 255, 255) !important;
+    display: flex !important
+;
+    min-width: max-content !important;
+    padding: 2px 7px !important;
+    background: linear-gradient(90deg, rgb(46, 169, 232), rgb(2, 253, 219)) text !important;
+    -webkit-text-fill-color: transparent !important;
+    position: relative !important;
+    margin-top: 0px !important;
+}
+.navbarlinks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;   
+}
+.navbarlinks-navbarlink
+{
+     padding: 10px 10px;
+   text-decoration:none;
+   color:white 
+   
+}
+.navbarlinks-navbarlink:hover
+{
+    border-radius: 10px;
+    padding: 10px 10px;
+    background-color:rgba(84, 65, 105, 0.765);
+   text-decoration:none;
+   color:white 
+} 
+
+.navbarlinks>hr
+{
+    width: 120%;
+    height:4px;
+    border: none;
+    background-color:white;
+    position: relative;
+    top:14px;
+}
+
+
+.navbar-right{
+    width: 317.33px;
+    height: 52px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-right> .Logo{
+    padding: 0px 5px;
+    border-radius: 10px; 
+}
+.navbar-right> .Logo:hover{
+    background-color: rgba(84, 65, 105, 0.765);
+    border-radius: 10px; 
+}
+.profileLogo-dropdownLogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    
+   
+}
+.profileLogo-dropdownLogo:hover{
+    background-color: rgba(84, 65, 105, 0.765);
+    border-radius: 10px; 
+}
+
+
+
+.navbar-right button{
+    height: 38px;
+    background-color: rgb(145, 70, 255);
+    color: white;
+   padding-inline: 6px;
+   border-radius: 10px;
+   border: none;
+   padding: 0px 20px;
+}
+.navbar-right button:hover{
+    background-color:rgb(97, 47, 151);
+}
+
+.profile-dropdown{
+    width: 300px;
+    height: 354px;
+    background-color:rgb(71, 71, 71);
+    position: absolute;
+    top: 60px; 
+    right: 35px;  
+    border-radius: 10px;
+    z-index: 10;
+
+}
+.profile-dropdown-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px 10px;
+}
+.profile-dropdown-col-item{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 10px;
+
+}
+.profile-dropdown-col-item:hover{
+    background-color:rgb(98, 98, 98);
+
+}
+.profile-dropdown-col-item>img{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+.profile-dropdown-col-item>p{
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+}
+.profile-dropdown>hr{
+    border:none;
+    border-top: 2px solid rgb(126, 126, 126) ;
+} 
+}
+
+
+
+
+@media(max-width:800px)
+{
+  .navbar
+{
+    height: 56px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color:rgb(42, 0, 88);
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    padding: 0px 20px;
+    box-sizing: border-box;
+}
+.navbar-left
+{
+    
+  height: 52px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 5px;
+  align-items: center;
+
+}
+.listlogo{
+    display: block;
+    height: 24px;
+    width: 24px;
+}
+.navbat-left-links
+{
+    border-radius: 10px 10px 0px 0px;
+    background-color: rgb(42, 0, 88);
+  position: absolute;
+  height: 300px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5px;
+  align-items: center;
+  top: 60px;
+  left: 10px;
+  z-index:999999999;
+}
+.lunalogo{
+    width:67.2px;
+    height: 20px;
+}
+.cloud-gaming{
+    font-family: Ember !important;
+    -webkit-font-smoothing: antialiased !important;
+    font-weight: 800 !important;
+    font-size: 10px !important;
+    color: rgb(255, 255, 255) !important;
+    display: flex !important
+;
+    min-width: max-content !important;
+    padding: 2px 7px !important;
+    background: linear-gradient(90deg, rgb(46, 169, 232), rgb(2, 253, 219)) text !important;
+    -webkit-text-fill-color: transparent !important;
+    position: relative !important;
+    margin-top: 0px !important;
+
+}
+
+.navbarlinks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;   
+}
+.navbarlinks-navbarlink
+{
+     padding: 10px 10px;
+   text-decoration:none;
+   color:white 
+   
+}
+.navbarlinks-navbarlink:hover
+{
+    border-radius: 10px;
+    padding: 10px 10px;
+    background-color:rgba(84, 65, 105, 0.765);
+   text-decoration:none;
+   color:white 
+} 
+
+.navbarlinks>hr
+{
+    width: 120%;
+    height:4px;
+    border: none;
+    background-color:white;
+    position: relative;
+    top:14px;
+}
+
+
+.navbar-right{
+    width: 150px;
+    height: 52px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-right> .Logo{
+    padding: 0px 5px;
+    border-radius: 10px; 
+}
+.navbar-right> .Logo:hover{
+    background-color: rgba(84, 65, 105, 0.765);
+    border-radius: 10px; 
+}
+.profileLogo-dropdownLogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    
+   
+}
+.profileLogo-dropdownLogo:hover{
+    background-color: rgba(84, 65, 105, 0.765);
+    border-radius: 10px; 
+}
+
+
+
+.navbar-right button{
+    position: absolute;
+    top: 360px;
+    left: 10px;
+    height: 38px;
+    width: 200px;
+    background-color: rgb(42, 0, 88);
+    color: white;
+   padding-inline: 6px;
+   border-radius: 0px 0px 10px 10px;
+   border: none;
+   padding: 30px 20px;
+}
+.navbar-right button:hover
+{
+    background-color:rgb(97, 47, 151);
+}
+
+.profile-dropdown{
+    width: 300px;
+    height: 354px;
+    background-color:rgb(71, 71, 71);
+    position: absolute;
+    top: 60px; 
+    right: 35px;  
+    border-radius: 10px;
+    z-index: 10;
+
+}
+.profile-dropdown-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px 10px;
+}
+.profile-dropdown-col-item{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 10px;
+
+}
+.profile-dropdown-col-item:hover{
+    background-color:rgb(98, 98, 98);
+
+}
+.profile-dropdown-col-item>img{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+.profile-dropdown-col-item>p{
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+}
+.profile-dropdown>hr{
+    border:none;
+    border-top: 2px solid rgb(126, 126, 126) ;
+}  
+}
+
+

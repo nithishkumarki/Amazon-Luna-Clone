@@ -1,0 +1,82 @@
+.gamecard
+{ 
+   display: flex;
+   flex-direction: column;
+   color: white;
+   transition: transform 0.4s ease-in-out;
+   z-index: 1;
+   position: relative;
+}
+.gamecard:hover 
+{  
+  
+   transition: transform 0.4s ease-in-out;
+   cursor: pointer;
+   z-index: 10;   
+}
+.gamecard-hover {
+  display: none;
+    position: absolute; 
+    top:30px;
+    left: 0;
+     width: 220px; 
+  height: 100px;
+   
+  /* background-color: rgba(137, 43, 226, 0.397); */
+  background: linear-gradient(
+    to bottom,
+    rgba(137, 43, 226, 0.1),  /* Light at the top */
+    rgba(137, 43, 226, 0.4),  /* Medium middle */
+    rgba(137, 43, 226, 0.8)   /* Darker at the bottom */
+  );
+   z-index: 999999;
+   overflow: hidden;
+
+}
+.gamecard:hover .gamecard-hover
+{  
+   display: flex; 
+}
+.gamecard-hover-details{
+   position: relative;
+   padding-left: 5px;
+   margin-top: 20px;
+
+}
+
+.gamecard-theme{
+   font-size: 10px;
+   display: flex;
+   flex-direction: row;
+   gap:5px;
+}
+.gamecard img
+{
+   width: 220px;
+   height: 130px;
+   border-radius: 5px;
+   object-fit: cover;
+
+}
+.gamecard-title {
+  margin: 8px 0 4px 0;
+  font-size: 14px;
+}
+
+.gamecard-hover-details p {
+  margin: 4px 0;
+  font-size: 12px;
+}
+.gamecard-hover-details a {
+  font-size: 12px;
+  color: #ffffff;
+   text-decoration: none;
+
+}
+
+
+
+
+
+
+

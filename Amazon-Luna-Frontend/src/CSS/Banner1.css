@@ -1,0 +1,63 @@
+.banner1{
+    color: white;
+    position: relative;
+    background-color:#0f071a;
+    overflow: hidden;
+    height: 400px;
+}
+.banner1-title
+{
+    bottom: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    object-fit: contain;
+    gap: 20px;
+}
+.banner1-gamecards{
+    display: flex;
+    flex-direction: row;
+    overflow-x:scroll;
+}
+.banner1> img {
+    z-index: 0;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+
+}
+.banner1 .banner1-title>img {
+    width: 200px;
+    height: 100px;
+    object-fit: contain;
+    margin: 20px auto;
+}
+.banner1-title>p {
+    color: white;
+    font-size: 15px;
+    
+}
+.banner1-cards{
+    display: flex;
+    flex-direction: row;
+    object-fit: contain;
+}
+
+@medi(max-width: 768px) {
+   .banner1 {
+        height: 300px;
+    }
+    .banner1-title>img {
+        width: 150px;
+        height: 75px;
+    }
+    .banner1-title>p {
+        font-size: 12px;
+    }
+ 
+    
+}

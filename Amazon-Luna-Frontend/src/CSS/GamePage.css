@@ -1,0 +1,428 @@
+.gamepage{
+    position: relative;
+    background-color:#0f071a;
+    min-height: 100vh;
+    max-height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 0px;
+    z-index: 1;
+    gap: 10px;
+}
+.gamepage-background{
+    position: absolute;
+      top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(0.4) saturate(0.8); /* Darker and less saturation */
+  z-index: -1;
+}
+.gamepage-gamedetails-1{
+
+    display: flex;
+    flex-direction: column;
+    padding: 0px 64px;
+    gap: 20px;
+}
+.gamepage-gamedetails-1 img{
+    
+}
+.gamepage-gamedetails-1-div1-playwith-item img{
+ height: 25px;
+    width: 25px;
+}
+.gamepage-gamedetails-1-div1-playwith-item {
+    display: flex;
+    align-items: center;
+
+}
+.gamepage-gamedetails-1-div1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.gamepage-gamedetails-1-div1-theme{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.gamepage-gamedetails-1-div1-theme span{
+    color: black;
+    background-color: #E3E3E3;
+    padding: 0px 8px;
+    border-radius: 5px;
+
+}
+.gamepage-gamedetails-1-div1-leftright{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: space-between;
+    gap: 10px;
+}
+.gamepage-gamedetails-1-share{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.mature{
+    position: absolute;
+    right: 90px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.mature img{
+    position: relative;
+    width: 52px !important;
+    height: 79px !important;
+}
+.gamepage-screenshots{
+   position: relative;
+}
+.gamepage-gamedetails-2{
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    padding: 0px 64px;
+    gap: 20px;
+    height: 100%;
+    width: 100%;
+    font-size: 15px;
+}
+.gamepage-gamedetails-2 h2{
+    height: 32px;
+   font-size: 20px;
+}
+.discriptionbox
+{
+    font-family: Ember !important;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    line-height: 24px !important;
+    overflow: hidden !important;
+    white-space: pre-wrap !important;
+  margin-top: 32px !important;
+    margin-bottom: 32px !important;
+    margin-left: 8px !important;
+}
+.discriptioncard
+{
+    display: flex;
+    flex-direction: column;
+    background: rgb(22, 22, 22) !important;
+    padding: 12px 32px !important;
+    border-radius: 4px !important;
+    margin-top: 32px !important;
+    margin-bottom: 32px !important;
+    height: fit-content !important;
+    gap: 10px !important;
+}
+.discriptioncard-hr
+{
+    color: #1f1f1f;
+}
+.discriptioncardkeyvalue
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+}
+.discriptioncarditem{
+ min-width: 155px;
+ 
+}
+.discriptioncarditem-metacritic{
+    font-size: large;
+    font-weight: 600;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(255, 213, 0);
+    padding: 10px 10px;
+    border-radius: 5px;
+    border:none;
+    
+}
+.gamepage-gamedetails-1-playremovebutton{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.playnow{
+    color: white;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content:center;
+    gap: 10px;
+    width: 200px;
+    height: 60px;
+    padding: 3px;
+    border-radius: 5px;
+    border: none;
+    background: linear-gradient(to right bottom, rgb(145, 70, 255), rgb(95, 0, 255)) !important;
+    
+}
+.playnow:hover{
+    background: linear-gradient(to right bottom, rgba(144, 70, 255, 0.626), rgba(93, 0, 255, 0.553)) !important;
+}
+
+.rfpl{
+    color: white;
+    background: rgba(227, 227, 227, 0.25) !important;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content:center;
+    gap: 10px;
+    width: 130px;
+    height: 60px;
+    padding: 3px;
+    border-radius: 5px;
+    border: none;
+}
+.rfpl:hover{
+    background: rgba(227, 227, 227, 0.5) !important;
+}
+.purchase-alert {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+.purchase-alert-content {
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.purchase-alert-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+.purchase-alert button{
+   color: white;
+    background: #9146ff;
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+}
+.purchase-alert button:hover{
+   
+   color: white;
+    background: #9046ffab;
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+}
+
+@media(max-width:1920px)
+{
+
+.gamepage{
+    z-index: 1;
+
+     margin:32 0px;
+    background-color:#0f071a;
+    min-height: 100vh;
+    max-height: 100%;
+    color: white;
+    display: flex;
+}
+.gamepage-gamedetails-1{
+    gap: 20px;
+
+    display: flex;
+    flex-direction: column;
+    padding: 0px 64px;
+}
+.gamepage-gamedetails-1 img{
+    height: 175px;
+    width: 400px;
+}
+.gamepage-gamedetails-1-div1{
+
+    display: flex;
+    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.gamepage-gamedetails-1-div1-playwith-item img{
+ height: 25px;
+    width: 25px;
+}
+.gamepage-gamedetails-1-div1-playwith-item 
+{
+    display: flex;
+    align-items: center;
+
+}
+.gamepage-screenshots{
+
+}
+
+}
+
+@media(max-width:800px)
+{
+    .mature{
+        display: none;
+    }
+}
+
+@media(max-width:500px)
+{
+.gamepage{
+    z-index: 1;
+     margin:32 0px;
+    background-color:#0f071a;
+    min-height: 100vh;
+    max-height: 100%;
+    color: white;
+    display: flex;
+}
+.gamepage-background
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width:100% ;
+  background-size: 100% auto;
+  background-position: top center;
+  background-repeat: no-repeat;
+  filter: brightness(0.4) saturate(0.8); /* Darker and less saturation */
+  z-index: -1;
+  image-rendering: auto; 
+}
+.gamepage-gamedetails-1{
+    gap: 20px;
+
+    display: flex;
+    flex-direction: column;
+    padding: 0px 16px;
+}
+.gamepage-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gamepage-gamedetails-1 img{
+    height: 105px;
+    width: 250px;
+}
+.gamepage-gamedetails-1-div1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+.gamepage-gamedetails-1-div1-playwith-item img{
+ height: 25px;
+    width: 25px;
+}
+.gamepage-gamedetails-1-div1-playwith-item {
+    display: flex;
+    align-items: center;
+
+}
+.gamepage-gamedetails-1-playremovebutton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.playnow{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content:center;
+    gap: 10px;
+    width: 100%;
+    height: 40px;
+    padding: 3px;
+    border-radius: 5px;
+    border: none;
+    background: linear-gradient(to right bottom, rgb(145, 70, 255), rgb(95, 0, 255)) !important;
+    
+}
+.rfpl{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content:center;
+    gap: 10px;
+    width: 100%;
+    height: 40px;
+    padding: 3px;
+    border-radius: 5px;
+    border: none;
+}
+.mature{
+    position: relative;
+    display: flex;
+    left: 0px;
+    align-items: center;
+    gap: 5px;
+}
+.mature img{
+    position: relative;
+    width: 52px !important;
+    height: 79px !important;
+}
+.gamepage-screenshots{
+
+}
+
+
+
+.gamepage-gamedetails-2{
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px;
+    gap: 20px;
+    height: 100%;
+    width: 100%;
+    font-size: 15px;
+}
+.gamepage-screenshots{
+   position: relative;
+
+}
+
+.gamepage .relatedgames h1{
+    position: relative;
+    right: 20px;
+
+}
+
+
+
+}

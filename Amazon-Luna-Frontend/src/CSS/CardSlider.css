@@ -1,0 +1,151 @@
+.card-section
+{
+    width: 100%;   
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  
+    gap: 10px;
+}
+.card-section-heading
+{
+    color: aliceblue;
+    font-family: Ember !important;
+    font-weight: 400 !important;
+    font-size: 24px !important;
+    margin-left: 50px;
+}
+
+.card-section-slider-container
+{
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   z-index: 1;
+  }
+  
+  .card-section-slider-container-cards {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin: 0 50px; 
+  position: relative;
+  overflow-x: auto;
+  /* overflow-y: visible; */
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.card-section-slider-container-cards:hover
+{
+  
+}
+
+
+.card-section-slider-container-cards::-webkit-scrollbar
+{
+  display: none;
+}
+.arrow-button{
+  margin: 0 20px;
+ position: absolute;
+ z-index: 10;
+ background-color:#0f071a00;;
+ color: white;
+ border: none;
+ cursor: pointer;
+}
+.arrow-button.left
+{
+  left: 0;
+}
+.arrow-button.right
+{
+  right: 0;
+}
+
+.search-page .card-section{
+   position: absolute;
+   left: 10px;
+}
+
+
+
+/* Responsive Design for Card Slider */
+/* Adjustments for smaller screens */
+
+
+
+
+
+
+@media(max-width: 500) {
+  .card-section
+{
+    width: 100%;   
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.card-section-heading
+{
+    color: aliceblue;
+    font-family: Ember !important;
+    font-weight: 400 !important;
+    font-size: 24px !important;
+    margin-left: 50px;
+}
+
+.card-section-slider-container
+{
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   z-index: 1;
+  }
+  
+  .card-section-slider-container-cards {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin: 0 20px; 
+  position: relative;
+   overflow-x: auto;   
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.card-section-slider-container-cards:hover
+{
+  
+}
+
+
+.card-section-slider-container-cards::-webkit-scrollbar
+{
+  display: none;
+}
+.arrow-button{
+  margin: 0 20px;
+ position: absolute;
+ z-index: 10px;
+ background-color:#0f071a00;;
+ color: white;
+ border: none;
+ cursor: pointer;
+}
+.arrow-button.left
+{
+  left: 0;
+}
+.arrow-button.right
+{
+  right: 0;
+}
+  
+}
+
+
+
+
