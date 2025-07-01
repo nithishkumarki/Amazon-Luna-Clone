@@ -37,7 +37,7 @@ const AmazonLunaContextProvider=(props)=>
   useEffect(()=>
     {
 
-    fetch(`${import.meta.env.VITE_ALCB_API_URL}/getAllGames`,
+    fetch(`https://amazon-luna-clone-live.onrender.com/getAllGames`,
         {
             method:"GET",
             headers:
