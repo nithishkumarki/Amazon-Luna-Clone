@@ -40,6 +40,7 @@ function Navbar()
 
   useEffect(() => {
       const checkLogin=()=> setIsLoggedIn(localStorage.getItem('auth-token')?true:false);
+      setIsLoggedIn(localStorage.getItem('auth-token')?true:false);
       
        // handle window resolution changes
       const handleResize = () => 
@@ -101,7 +102,8 @@ function Navbar()
             navigate("/signupsignin");
             return;
       }
-      else{
+      if(isLoggedIn)
+      {    
 
             localStorage.removeItem('auth-token'); 
             navigate("/"); 
