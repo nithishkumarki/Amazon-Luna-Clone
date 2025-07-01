@@ -39,7 +39,7 @@ function Navbar()
 
 
   useEffect(() => {
-      fetchUserData();
+      // fetchUserData();
       const checkLogin=()=> setIsLoggedIn(localStorage.getItem('auth-token')?true:false);
       setIsLoggedIn(localStorage.getItem('auth-token')?true:false);
       
