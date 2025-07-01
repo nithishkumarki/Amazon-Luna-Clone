@@ -32,6 +32,11 @@ function GamePage()
   
   const handlePlayButton=()=>
    {
+      if(!isLoggedIn)
+      {
+        alert("Please login to play the game");
+        return;
+      }
      if(game.pack && (userData.userData.primesubscription==="notSubscribed"||
           userData.userData.ubisoftsubscription==="notSubscribed"||
           userData.userData.EAsubscription==="notSubscribed"||
@@ -121,7 +126,7 @@ function GamePage()
          {
          return (
            <div className='gamepage gamepage-loading'>
-             <h1>Loading...</h1>
+            
            </div>
                );
          }

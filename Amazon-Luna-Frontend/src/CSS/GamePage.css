@@ -240,6 +240,12 @@
     border: none;
     border-radius: 5px;
 }
+.gamepage-gamedetails-1 img {
+        height: 175px;
+        width: 400px;
+        object-fit: contain;
+        object-position: left;
+    }
 
 @media(max-width:1920px)
 {

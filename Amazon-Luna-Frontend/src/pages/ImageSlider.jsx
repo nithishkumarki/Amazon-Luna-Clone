@@ -1,10 +1,6 @@
 import React, { useState, useEffect,useRef } from "react";
+import {Link} from "react-router-dom";
 import "../CSS/ImageSlider.css"; 
-// import nsslider2 from "../AssertsPage/nsslider2.png";
-// import nsslider3 from "../AssertsPage/nsslider3.png";
-// import nsslider4 from "../AssertsPage/nsslider4.png";
-// import nsslider5 from "../AssertsPage/nsslider5.png";
-// import nsslider1 from "../AssertsPage/nsslider1.mp4"; 
 
 const media = 
 [
@@ -25,6 +21,23 @@ const ImageSlider = () =>
     }, 13450);
     return () => clearInterval(interval);
   }, [currentIndex]);
+
+  const loadGamePage=()=>{
+    const game = media[currentIndex];
+    console.log("Current Index:", currentIndex);
+    if (game.type === "video" && currentIndex === 0)
+       {
+      window.location.href = `/gamepage/34`;
+    } 
+    else if (game.type === "video" && currentIndex === 1)
+       {
+      window.location.href = `/gamepage/1`;
+    } 
+    else if (game.type === "video" && currentIndex === 2)
+       {
+      window.location.href = `/gamepage/4`;
+    } 
+  }
 
   const nextSlide = () =>
   {
@@ -51,7 +64,7 @@ const ImageSlider = () =>
           <div className="carousel-content">
             <img src={ media[currentIndex].title } />
             <p >{media[currentIndex].content}</p>
-            <button>Learn More</button>
+            <button onClick={loadGamePage} >Learn More</button>
           </div>
 
           {media[currentIndex].type === "image" ? (
