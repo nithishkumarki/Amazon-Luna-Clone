@@ -96,7 +96,8 @@ function Navbar()
   {
       if(!isLoggedIn)
       {
-            window.location.replace("/signupsignin"); 
+             window.location.replace(`/signupsignin`); 
+            // window.location.replace("/signupsignin"); 
             return;
       }
   localStorage.removeItem('auth-token'); 
