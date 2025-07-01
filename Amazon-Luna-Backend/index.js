@@ -13,7 +13,7 @@ app.use(cors({
     'http://localhost:3000',
     'http://localhost:8000', 
     'http://localhost:5173',
-    'https://your-frontend-domain.com' 
+    'https://amazon-luna.onrender.com' 
   ],
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
